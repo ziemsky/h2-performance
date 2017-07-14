@@ -128,7 +128,7 @@ public class H2PerformanceApplicationTests {
 
 
     private String randomString(int length) {
-        return range(0, length).collect(StringBuilder::new, (stringBuilder, value) -> stringBuilder.append(value),
+        return range(0, length).collect(StringBuilder::new, (stringBuilder, value) -> stringBuilder.append("a"),
             StringBuilder::append).toString();
     }
 
